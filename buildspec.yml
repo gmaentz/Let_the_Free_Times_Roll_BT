@@ -11,4 +11,4 @@ phases:
       - npm run build -prod
   post_build:
     commands:
-      - aws --region us-west-2 s3 sync ./dist/ s3://gabe-webserver/ --acl=public-read --delete
+      - aws --region us-west-2 s3 sync ./dist/ s3://couch2cloud/ --acl=public-read --delete
